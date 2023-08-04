@@ -1,0 +1,80 @@
+@use "abstracts" as *;
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.header {
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+  color: $color-gray-100;
+
+  > h4 {
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 0 12px #a600a6, 0 0 50px #a600a6;
+    margin-top: 20px;
+  }
+
+  > span {
+    font-size: 64px;
+    font-weight: 900;
+    font-family: "Righteous", cursive;
+    color: $color-gray-200;
+    animation: shiny 3.75s ease-in-out infinite;
+  }
+}
+.header span:nth-of-type(1) {
+  animation-delay: 0.25s;
+}
+.header span:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.header span:nth-of-type(3) {
+  animation-delay: 0.75s;
+}
+.header span:nth-of-type(4) {
+  animation-delay: 1s;
+}
+.header span:nth-of-type(5) {
+  animation-delay: 1.25s;
+}
+.header span:nth-of-type(6) {
+  animation-delay: 1.5s;
+}
+.header span:nth-of-type(7) {
+  animation-delay: 1.75s;
+}
+.header span:nth-of-type(8) {
+  animation-delay: 2s;
+}
+.header span:nth-of-type(9) {
+  animation-delay: 2.25s;
+}
+.header span:nth-of-type(10) {
+  animation-delay: 2.5s;
+}
+.header span:nth-of-type(11) {
+  animation-delay: 2.75s;
+}
+.header span:nth-of-type(12) {
+  animation-delay: 3s;
+}
+.header span:nth-of-type(13) {
+  animation-delay: 3.25s;
+}
+.header span:nth-of-type(14) {
+  animation-delay: 3.5s;
+}
+
+@keyframes shiny {
+  0% {
+    color: $color-gray-100;
+    text-shadow: 0 0 12px #a600a6, 0 0 50px #a600a6, 0 0 100px #a600a6;
+  }
+  10%,
+  90% {
+    color: $color-gray-200;
+    text-shadow: none;
+  }
+  100% {
+  }
+}
