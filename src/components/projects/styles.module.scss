@@ -1,0 +1,17 @@
+@use "abstracts" as *;
+
+.container {
+  border: 1px solid red;
+  margin-top: 150px;
+  width: 90%;
+  max-width: 1100px;
+  height: 100px;
+
+  > h3 {
+    font-family: "Righteous", cursive;
+    font-size: 24px;
+    padding: 30px;
+    color: $color-gray-100;
+    text-shadow: 0 0 12px $color-primary-500, 0 0 50px $color-primary-500;
+  }
+}
