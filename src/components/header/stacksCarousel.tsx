@@ -23,9 +23,9 @@ export default function StacksCarrousel() {
         mouseTracking: true,
         touchTracking: true,
         responsive: {
-            0: { items: 1 },
-            400: { items: 2 },
-            568: { items: 4 },
+            0: { items: 2 },
+            400: { items: 4 },
+            568: { items: 5 },
             780: { items: 6 },
             1024: { items: 8 },
         },

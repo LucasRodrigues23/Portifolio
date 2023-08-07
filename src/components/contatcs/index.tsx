@@ -15,7 +15,7 @@ export default function Contacts() {
                         </a>
                     </li>
                     <li>
-                        <a href="mailto=lcs.rs23@gmail.com" target='blank'>
+                        <a href="mailto:lcs.rs23@gmail.com">
                             <MdOutgoingMail />
                         </a>
                     </li>

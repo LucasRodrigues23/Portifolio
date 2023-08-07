@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Projects from "@/components/projects";
 import styles from './styles.module.scss'
 import Contacts from "@/components/contatcs";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Aside />
       <Projects />
       <Contacts />
+      <Footer />
     </main>
   )
 }

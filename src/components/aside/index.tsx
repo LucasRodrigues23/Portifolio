@@ -4,11 +4,12 @@ import Link from 'next/link'
 export default function Aside() {
     return (
         <>
-            <div className={styles.asideBg}></div>
             <aside className={styles.asideContainer}>
-                <Link href="https://www.linkedin.com/in/dev-lucasrodrigues23/" target='blank'><AiFillLinkedin /></Link>
-                <Link href="https://www.linkedin.com/in/dev-lucasrodrigues23/" target='blank'><AiFillGithub /></Link>
-                <Link href="https://www.instagram.com/lucaszrodrigues23/" target='blank'><AiFillInstagram /></Link>
+                <div className={styles.btBox}>
+                    <Link href="https://www.linkedin.com/in/dev-lucasrodrigues23/" target='blank'><AiFillLinkedin /></Link>
+                    <Link href="https://github.com/LucasRodrigues23" target='blank'><AiFillGithub /></Link>
+                    <Link href="https://www.instagram.com/lucaszrodrigues23/" target='blank'><AiFillInstagram /></Link>
+                </div>
             </aside >
         </>
     )
