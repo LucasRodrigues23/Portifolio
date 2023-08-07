@@ -21,7 +21,7 @@
     > span {
       font-size: 64px;
       font-weight: 900;
-      color: $color-gray-200;
+      color: $color-gray-400;
       animation: shiny 3.75s ease-in-out infinite;
     }
   }
@@ -128,7 +128,7 @@
   }
   10%,
   90% {
-    color: $color-gray-200;
+    color: $color-gray-400;
     text-shadow: none;
   }
   100% {
