@@ -1,12 +1,17 @@
+import { Righteous } from 'next/font/google'
 import StacksCarrousel from './stacksCarousel'
 import styles from './styles.module.scss'
 
+const righteous = Righteous({ weight: '400', subsets: ['latin'] })
+
 export default function Header() {
+
+
     return (
         <>
             <div id='inicio'></div>
             <header className={styles.header}>
-                <div>
+                <div className={righteous.className}>
                     <span>L</span>
                     <span>U</span>
                     <span>C</span>

@@ -1,5 +1,7 @@
+import { Righteous } from 'next/font/google';
 import styles from './styles.module.scss';
 
+const righteous = Righteous({ weight: '400', subsets: ['latin'] })
 
 export default function NavBar() {
 
@@ -8,7 +10,7 @@ export default function NavBar() {
         <>
             <div className={styles.container}>
                 <div>
-                    <h1>Lucas Rodrigues</h1>
+                    <h1 className={righteous.className}>Lucas Rodrigues</h1>
                     <nav className={styles.nav}>
                         <a href="#inicio">Inicio</a>
                         <a href="#projetos">Projetos</a>
