@@ -37,3 +37,16 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    > ul {
+      > li {
+        > a {
+          color: $color-gray-200;
+          text-shadow: 0 0 12px $color-primary-500, 0 0 50px $color-primary-500;
+        }
+      }
+    }
+  }
+}

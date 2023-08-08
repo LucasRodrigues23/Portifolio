@@ -11,7 +11,7 @@
   left: 0;
   top: 250px;
   z-index: 11;
-  padding: 5px 10px 0 10px;
+  padding: 15px 10px 15px 10px;
   transition: 0.5s;
   -webkit-animation: slide-in-fwd-tl 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     1s both;
@@ -39,7 +39,7 @@
     top: 80px;
     width: 100%;
     border-radius: 0;
-    filter: drop-shadow(0px 0px 0px $color-primary-500);
+    filter: drop-shadow(0px 0px 0px $color-black);
   }
   .btBox {
     flex-direction: row;
@@ -47,6 +47,12 @@
     justify-content: center;
     gap: 30px;
     width: 100%;
+    > a {
+      color: $color-gray-200;
+      > svg {
+        filter: drop-shadow(0px 0px 12px $color-primary-500);
+      }
+    }
   }
 }
 @-webkit-keyframes slide-in-fwd-tl {
