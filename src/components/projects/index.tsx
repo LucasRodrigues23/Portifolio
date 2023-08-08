@@ -6,9 +6,15 @@ import { api } from '@/services/api';
 const righteous = Righteous({ weight: '400', subsets: ['latin'] })
 
 export default async function Projects() {
-    
+
     const response = await api.get('');
-    const projects = response.data;
+    const projects = response.data/* [{
+        id: 1,
+        name: 'Testando',
+        description: "testando testando testando testando testando testando testando testando testando testando",
+        language: "Javascript",
+        hrml_ur: "http://localhost"
+    }] */
 
     return (
         <>
@@ -16,7 +22,7 @@ export default async function Projects() {
             <section id="projetos" className={styles.container}>
                 <h3 className={righteous.className}>Projetos</h3>
                 <ul>
-                    {projects.map((project: any, i: any) => <ProjecstCard key={i} project={project} />)}
+                    {projects.map((project: any) => <ProjecstCard key={project.id} project={project} />)}
                 </ul>
             </section>
         </>

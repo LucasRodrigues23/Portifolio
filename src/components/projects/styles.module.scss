@@ -31,20 +31,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
-  > h4 {
-    color: $color-gray-400;
-  }
+  text-align: center;
+  padding: 15px;
 }
-
 .title {
-  font-size: 24px;
-  color: $color-gray-400;
+  width: 180px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-size: 18px;
+  color: $color-gray-200;
+  font-weight: 600;
+  text-shadow: 0 0 12px $color-primary-500, 0 0 50px $color-primary-500;
 }
 
-.cat {
-  font-size: 16px;
-  color: $color-gray-400;
+.language {
+  font-size: 14px;
+  color: $color-gray-200;
+  font-weight: 500;
+}
+
+.descripton {
+  font-size: 12px;
+  color: $color-gray-200;
+  font-weight: 500;
 }
 
 .btBox {
@@ -52,4 +61,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color-gray-200;
+    text-shadow: 0 0 12px $color-primary-500, 0 0 50px $color-primary-500;
+    cursor: pointer;
+  }
 }
